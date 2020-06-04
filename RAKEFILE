@@ -1,0 +1,8 @@
+require './config/environment'
+require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
+require_relative 'APP/Controller/application.rb'
+
+task :console do
+  pry.start
+end
